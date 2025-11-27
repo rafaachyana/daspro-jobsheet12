@@ -6,6 +6,13 @@ public class RekapPenjualanCafe22 {
     static int[][] penjualan = new int[jumlahMenu][jumlahHari];
     public static void inputData() {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan jumlah menu: ");
+        jumlahMenu=sc.nextInt();
+        System.out.print("Masukkan jumlah hari: ");
+        jumlahHari=sc.nextInt();
+        sc.nextLine();
+        namaMenu=new String[jumlahMenu];
+        penjualan=new int [jumlahMenu][jumlahHari];
         for(int i=0; i<jumlahMenu; i++){
             System.out.print("Masukkan nama menu ke-"+(i+1)+":");
             namaMenu[i]=sc.nextLine();
